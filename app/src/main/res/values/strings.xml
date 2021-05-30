@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SantanderDevWeek</string>
+    <string name="txt_client">Mateus</string>
+    <string name="txt_hello">Olá,</string>
+    <string name="txt_agency">Ag 2040</string>
+    <string name="txt_account_currency">4418742-0</string>
+    <string name="txt_balance_available">Saldo disponível</string>
+    <string name="txt_balance">R$ 2400,00</string>
+    <string name="txt_balance_limit">Saldo + Limite:</string>
+    <string name="txt_limit">4.300,70</string>
+    <string name="txt_see_extract">Ver Extrato</string>
+    <string name="txt_pay">Pagar</string>
+    <string name="txt_transferir">Transferir</string>
+    <string name="txt_recharge">Recarga</string>
+    <string name="txt_card_final">Cartão Final</string>
+    <string name="txt_card_final_number">0033</string>
+</resources>
