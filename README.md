@@ -1,3 +1,13 @@
+ <p align="left">
+        <img 
+            src="https://github.com/mateusdemp/SantanderDevWeek/blob/master/layout-pt-br.jpg" width="21%"
+            title="Layout do projeto em português" />
+         <img
+            src="https://github.com/mateusdemp/SantanderDevWeek/blob/master/layout-en-us.jpg" width="21%"
+            title="Layout do projeto em inglês" />
+<p/>
+
+
 # SantanderDevWeek
 
 A Santander Dev-Week, foi uma semana imersiva em que aborda assuntos sobre Full-Stack e Mobile, tecnologias como Java, Angular (Full-Stack) e Kotlin (Mobile),
