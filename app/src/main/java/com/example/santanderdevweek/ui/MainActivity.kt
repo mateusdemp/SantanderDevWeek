@@ -27,11 +27,35 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun bindOnView(account: Account) {
-        findViewById<TextView>(R.id.tv_agency).text = account.agency
-        findViewById<TextView>(R.id.tv_account_currency).text = account.number
-        findViewById<TextView>(R.id.tv_balance).text = account.balance
-        findViewById<TextView>(R.id.tv_limit).text = account.limit
-        findViewById<TextView>(R.id.tv_client).text = account.client.name
-        findViewById<TextView>(R.id.tv_card_number).text = account.card.numberCard
+        /**
+         *  Passando o valor do objeto diretamente nas váriaves de texto %1$s (nesse caso ele espera uma string)
+         *  Agora você pode customizar seu texto estático e passar um valor dinâmico dentro dele ao mesmo tempo.
+         *  Neste caso, os caracteres de R$ serão estátitcos e o valor em reais será dinâmico, pois o valor será variado conforme
+         *  cada cliente.
+         *
+         *  link sobre formatação de strings:
+         *  https://developer.android.com/guide/topics/resources/string-resource
+         */
+
+        findViewById<TextView>(R.id.tv_agency).text =
+            String.format(resources.getString(R.string.txt_agency), account.agency)
+
+        findViewById<TextView>(R.id.tv_account_currency).text =
+            String.format(resources.getString(R.string.txt_account_currency), account.number)
+
+        findViewById<TextView>(R.id.tv_balance).text =
+            String.format(resources.getString(R.string.txt_balance), account.balance)
+
+        findViewById<TextView>(R.id.tv_limit).text =
+            String.format(resources.getString(R.string.txt_limit), account.limit)
+
+        findViewById<TextView>(R.id.tv_hello_client).text =
+            String.format(resources.getString(R.string.txt_hello_client), account.client.name)
+
+        findViewById<TextView>(R.id.tv_card_number).text =
+            String.format(
+                resources.getString(R.string.txt_card_final_number),
+                account.card.numberCard
+            )
     }
 }
