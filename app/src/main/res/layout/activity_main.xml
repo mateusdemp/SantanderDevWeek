@@ -35,27 +35,15 @@
 
 
     <TextView
-        android:id="@+id/tv_hello"
+        android:id="@+id/tv_hello_client"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="@string/txt_hello"
+        android:text="@string/txt_hello_client"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar"/>
-
-    <TextView
-        android:id="@+id/tv_client"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:text="@string/txt_client"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/tv_hello"
-        app:layout_constraintTop_toTopOf="@id/tv_hello"
-        app:layout_constraintBottom_toBottomOf="@id/tv_hello"/>
 
     <TextView
         android:id="@+id/tv_agency"
@@ -66,8 +54,8 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@id/tv_hello"
-        app:layout_constraintTop_toBottomOf="@id/tv_hello" />
+        app:layout_constraintStart_toStartOf="@id/tv_hello_client"
+        app:layout_constraintTop_toBottomOf="@id/tv_hello_client" />
 
     <TextView
         android:id="@+id/tv_account_currency"
@@ -80,7 +68,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/tv_agency"
-        app:layout_constraintTop_toBottomOf="@id/tv_client" />
+        app:layout_constraintTop_toBottomOf="@id/tv_hello_client" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/mcv_card_user"

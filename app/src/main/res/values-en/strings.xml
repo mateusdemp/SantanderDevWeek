@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SantanderDevWeek</string>
-    <string name="txt_client">Mateus</string>
-    <string name="txt_hello">Hello,</string>
-    <string name="txt_agency">Ag 2040</string>
-    <string name="txt_account_currency">4418742-0</string>
+    <string name="txt_hello_client">Hello, %1$S</string>
+    <string name="txt_agency">Ag %1$s </string>
+    <string name="txt_account_currency"> %1$s </string>
     <string name="txt_balance_available">Balance available</string>
-    <string name="txt_balance">R$ 2400,00</string>
+    <string name="txt_balance">R$ %1$s </string>
     <string name="txt_balance_limit">Balance + Limit:</string>
-    <string name="txt_limit">4.300,70</string>
+    <string name="txt_limit">R$ %1s </string>
     <string name="txt_see_extract">See Extract</string>
     <string name="txt_pay">Pay</string>
     <string name="txt_transferir">Transfer</string>
     <string name="txt_recharge">Recharge</string>
     <string name="txt_card_final">Card Final</string>
-    <string name="txt_card_final_number">0033</string>
+    <string name="txt_card_final_number">%1$s </string>
 </resources>
