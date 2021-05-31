@@ -1,10 +1,8 @@
 package com.example.santanderdevweek.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
 import android.widget.TextView
-import androidx.lifecycle.Observer
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.santanderdevweek.R
 import com.example.santanderdevweek.data.Account
@@ -23,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun findAccountClient() {
-        mainViewModel.buscarContaCliente().observe(this, Observer { result ->
+        mainViewModel.buscarContaCliente().observe(this, { result ->
             bindOnView(result)
         })
     }
@@ -34,6 +32,6 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.tv_balance).text = account.balance
         findViewById<TextView>(R.id.tv_limit).text = account.limit
         findViewById<TextView>(R.id.tv_client).text = account.client.name
-        findViewById<TextView>(R.id.tv_card_final).text = account.card.numberCard
+        findViewById<TextView>(R.id.tv_card_number).text = account.card.numberCard
     }
 }
