@@ -6,8 +6,8 @@
             src="https://github.com/mateusdemp/SantanderDevWeek/blob/master/layout-en-us.jpg" width="21%"
             title="Layout do projeto em inglês" />
 <p/>
- Layout's in Portuguese and English.
-
+ Layout's em Português e Inglês
+ 
 
 # SantanderDevWeek
 
